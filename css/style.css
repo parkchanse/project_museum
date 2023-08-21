@@ -8,6 +8,8 @@ body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 
@@ -22,12 +24,25 @@ ul,li {
     margin: 0;
 }
 
+span, p {
+    padding: 0;
+    margin: 0;
+}
+
+/* main 영역 */
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+}
+
 /* header 영역 */
 
 header {
     border: 1px solid red;
     width: 100%;
-    height: 100px;
 }
 
 /* nav 영역 */
@@ -42,6 +57,8 @@ header {
     justify-content: space-between;
     align-items: center;
     /* display: none; */
+    position: relative;
+    opacity: 1;
 }
 
 
@@ -131,15 +148,11 @@ header {
     color: var(--sub-color);
 }
 
-/* .gnbbg{
-    display: none;
+
+.top_layout:hover > #bottom_layout{
+    opacity: 1;
+    transition: all 0.5s;
 }
-
-.opacity {
-    opacity: 0;
-} */
-
-
 
 /* bottom */
 .bottom_layout {
@@ -150,7 +163,11 @@ header {
     align-items: center;
     background-color: var(--main-color);
     /* box-shadow: 5px 5px 5px; */
+    /* visibility: hidden; */
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0; 
 }
 
 .bottom_layout .logo {
@@ -192,7 +209,6 @@ header {
     height: 50px;
     border-bottom: 5px solid transparent;
     transition: 0.2s;
-    border: 1px solid red;
 }
 
 .bottom_layout .bottom_nav .bottom_nav_ul > li > a:hover {
@@ -673,7 +689,6 @@ header {
     content: none;
 }
 
-<<<<<<< HEAD
 /* section */
 
 .section {
@@ -899,10 +914,7 @@ header {
 
 
 
-=======
->>>>>>> parent of 90c8aad (main 영역 완료, section02 영역 완료, article부분 작업)
 
-/* main 영역 */
 
 
 
