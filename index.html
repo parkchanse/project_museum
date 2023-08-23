@@ -293,7 +293,7 @@
             </div>
             <div class="article01_slider">
                 <div class="article01_slider_container">
-                    <div class="item slide01">
+                    <div class="item fade">
                         <div class="item_container">
                             <div class="cont_box">
                                 <div class="text_box">
@@ -321,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item slide02">
+                    <div class="item fade">
                         <div class="item_container">
                             <div class="cont_box">
                                 <div class="text_box">
@@ -349,15 +349,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item slide03">
+                    <div class="item fade">
                         <div class="item_container">
                             <div class="cont_box">
                                 <div class="text_box">
                                     <div class="text_box_container">
-                                        <strong>내일의 문자</strong>
-                                        <span>
-                                            정보 통신 기술의 비약적인 발전이 대전환의 시대를 열었다. <br>
-                                            문자를 통한 지식의 공유 방법도 크게 변하였다.그 변화의 중심에 디지털 매체가 있다.
+                                        <strong>문자, 문화를 만들다</strong>
+                                        <span>  
+											인류의 모든 문화와 문명은 문자 위에 세워졌다. <br>
+											생성과 소멸의 과정에서 드러난 문자의 저력은 대단했다.			
                                         </span>
                                         <div class="btn_Wrap">
                                             <a href="#">
@@ -377,15 +377,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item slide04">
+                    <div class="item fade">
                         <div class="item_container">
                             <div class="cont_box">
                                 <div class="text_box">
                                     <div class="text_box_container">
-                                        <strong>위대한 발명</strong>
+                                        <strong>내일의 문자</strong>
                                         <span>
-                                            인류에게는 말과 소리가 있었다. <br>
-                                            문자가 없던 선사 시대, 말에 표정과 손짓을 보태 인류는 생각과 감정을 전달했다. 그러나 말은 입에서 나오는 순간 사라졌다.
+									        정보 통신 기술의 비약적인 발전이 대전환의 시대를 열었다. <br>
+											문자를 통한 지식의 공유 방법도 크게 변하였다.그 변화의 중심에 디지털 매체가 있다.
                                         </span>
                                         <div class="btn_Wrap">
                                             <a href="#">
@@ -410,22 +410,22 @@
                 <div class="slider_nav">
                     <ul>
                         <li>
-                            <button class="slider_nav_btn">
+                            <button class="slider_nav_btn" onclick="currentSlide(1)">
                                 <em>프롤로그</em>
                             </button>
                         </li>
                         <li>
-                            <button class="slider_nav_btn">
+                            <button class="slider_nav_btn" onclick="currentSlide(2)">
                                 <em>1부</em>
                             </button>
                         </li>
                         <li>
-                            <button class="slider_nav_btn">
+                            <button class="slider_nav_btn" onclick="currentSlide(3)">
                                 <em>2부</em>
                             </button>
                         </li>
                         <li>
-                            <button class="slider_nav_btn">
+                            <button class="slider_nav_btn" onclick="currentSlide(4)">
                                 <em>에필로그</em>
                             </button>
                         </li>
@@ -433,10 +433,8 @@
                 </div>
             </div>
             <div class="slide_btn">
-                <div class="slide_btn_container">
-                    <i class="fas fa-chevron-left prev"></i>
-                    <i class="fas fa-chevron-right next"></i>
-                </div>
+                    <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
     </article>

@@ -1,14 +1,39 @@
-const sliderWrap = document.querySelector(".article01_slider")
-const sliderdiv = sliderWrap.querySelector(".article01_slider_container")
-const slider = sliderWrap.querySelectorAll(".item")
-const slider_btn_prev = sliderWrap.querySelector(".prev")
-const slider_btn_next = sliderWrap.querySelector(".next")
+let slideIndex = 1;
+showSlides(slideIndex)
 
-let courrentIndex = 0
-let sliderCount = slider.length
+function plusSlides(e) {
+    showSlides(slideIndex += e)
+    console.log(plusSlides)
+}
 
-// sliderWrap.style.backgroundColor = "red";
-// sliderdiv.style.backgroundColor = "blue";
-slider.style.background = "green";
+function currentSlide(e) {
+    showSlides(slideIndex = e)
+    console.log(currentSlide)
+}
 
-console.log(slider)
+function showSlides(e) {
+    let i = 0
+    let slides = document.getElementsByClassName("item")
+    let dots = document.getElementsByClassName("slider_nav_btn")
+
+    if(e > slides.length) {
+        slideIndex = 1
+    }
+    if(e < 1) {
+        slideIndex = slides.length
+    }
+    for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"
+    }
+
+    for(i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "")
+    }
+    slides[slideIndex-1].style.display = "block"
+    dots[slideIndex-1].className += " active"
+}
+
+
+
+
+
