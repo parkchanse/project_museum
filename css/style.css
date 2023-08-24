@@ -898,8 +898,8 @@ header {
 }
 
 .title_box {
-    border: 1px solid red;
     text-align: center;
+    border: 1px solid red;
 }
 
 .title_box span {
