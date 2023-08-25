@@ -1,3 +1,5 @@
+// article02 슬라이드 영역
+
 let slideIndex = 1;
 showSlides(slideIndex)
 
@@ -32,6 +34,31 @@ function showSlides(e) {
     slides[slideIndex-1].style.display = "block"
     dots[slideIndex-1].className += " active"
 }
+
+
+// footer 영역
+
+const footer_wrap = document.querySelector(".info_wrap")
+const link_site = document.querySelector(".link_site")
+
+function footerclick() {
+    link_site.classList.add('show')
+    document.querySelector(".show").style.display = 'block'
+}
+
+function footerout() {
+    link_site.classList.add('down')
+    document.querySelector('.down').style.display = 'none'
+}
+
+footer_wrap.addEventListener("mouseover", footerclick)
+footer_wrap.addEventListener("mouseout", footerout)
+
+
+
+
+
+
 
 
 
