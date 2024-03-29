@@ -1,7 +1,10 @@
-fetch('https://goweather.herokuapp.com/weather/{city}')
+// https://github.com/robertoduessmann/weather-api?tab=readme-ov-file
+
+fetch('https://goweather.herokuapp.com/weather/Curitiba')
   .then((response) => response.json())
   .then((data) => {
     // console.log(data)
+    // console.log(data.forecast)
     // console.log(data.forecast)
     // console.log(data.forecast[0])
     // console.log(data.forecast[0].day, data.forecast[0].temperature)
